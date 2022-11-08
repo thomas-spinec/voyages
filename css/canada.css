@@ -1,0 +1,46 @@
+/* ***************
+    Section Hero 
+*****************  */
+#ca_body {
+}
+
+.ca_hero {
+  background: #4d6f94 url(../img/canada1.jpg) no-repeat; /* image de fond */
+  background-size: cover;
+  background-position: 50% 60%;
+  width: 100%;
+  height: 40vh;
+  color: #fff;
+}
+
+.ca_centrage {
+  width: 90vw;
+  height: 100%;
+  margin: auto;
+  padding-top: 2%;
+}
+
+#ca_img_hero {
+  width: 20vh;
+  height: auto;
+  opacity: 40%;
+}
+
+#ca_texte_hero {
+  position: relative;
+}
+
+#ca_texte_hero h1 {
+  margin: 0;
+}
+
+#ca_tableau {
+  width: 100%;
+  text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  font-size: 20px;
+}
+
+#ca_tableau td,
+th {
+  text-align: center;
+}
