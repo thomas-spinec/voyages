@@ -2,7 +2,7 @@
          BLOC (INFORMATIONS)
 ****************************************** */
 .informations {
-  background: url(lion.jpg) no-repeat;
+  background: url(../img/lion.jpg) no-repeat;
   background-size: 100%;
   background-position: cover;
   padding: 120px 0;
@@ -107,10 +107,8 @@ h3 {
   filter: grayscale(0) blur(0px);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  align-items: top;
-  flex-direction: row;
-  flex-wrap: nowrap;
   box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 7%;
 }
 
 .morph :hover img {
