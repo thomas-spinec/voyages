@@ -1,8 +1,19 @@
 /* ***************
+Styles généraux de la page Canada
+**************** */
+
+#ca_main {
+  margin-top: 60px;
+  margin-bottom: 2%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ***************
     Section Hero 
 *****************  */
 
-.ca_hero {
+#ca_hero {
   background: #4d6f94 url(../img/canada1.jpg) no-repeat; /* image de fond */
   background-size: cover;
   background-position: 50% 60%;
@@ -41,4 +52,18 @@
 #ca_tableau td,
 th {
   text-align: center;
+}
+
+/* ******************
+    Section Accroche
+******************* */
+
+#ca_accroche_texte {
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  margin-bottom: 2%;
+  box-shadow: 0px 0px 60px 0px #898246;
+  border-radius: 10px;
 }
