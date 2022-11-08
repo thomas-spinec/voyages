@@ -1,20 +1,26 @@
 #body_italie{
     background-color: #fae6b1;
+    color: #31525b;
 }
 
 #h1_italie{
-    color: #343633;
+    color: red;
     margin-top: 6%;
 }
 
 #h3_italie{
-    color: #31525b;
+    color: green;
 }
 
-.tableauItalie{
+#tableau_italie{
     width: 100%;
-    border: 3px solid red;
+   
 }
+  
+  #th_italie,#td_italie {
+    border: 1px solid black;
+    padding: 10px;
+  }
 
 .div_italie{
     width: 100%;
@@ -66,7 +72,7 @@
     margin-bottom: 2%;
     border-style: solid;
     border-width: 10px;
-    border-image: linear-gradient(90deg, rgb(240, 0, 0), rgb(255, 255, 255), rgb(0, 214, 36)) 1;
+    border-image: linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 255, 255), rgb(0, 214, 36)) 1;
 }
 
 .italie_2_ville{
