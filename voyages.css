@@ -1,0 +1,157 @@
+/****************************
+*           RESET
+****************************/
+/*DÉBUT RESET*/
+html,
+body,
+div,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  color: rgb(161, 8, 8);
+  text-decoration: none;
+}
+
+a:visited {
+  color: #666;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(11, 13, 86);
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(174, 16, 16);
+  text-decoration: none;
+}
+/*FIN RESET*/
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {font-size: 48px;}
+h2 {font-size: 40px;}
+h3 {font-size: 30px;}
+h4 {font-size: 22px;}
+h5 {font-size: 15px;}
+h6 {font-size: 13px;}
+
+body {}
+header {}
+.container {
+    width: 100%;
+    max-height: 100vh;
+    margin: 0;
+    padding: 2%;
+}
+/****************************
+*           TOOLS
+****************************/
+.row {
+display: flex;
+padding: 0 15px;
+}
+.col {
+    flex: 1;
+    padding: 0 15px;
+}
+/****************************
+*           MENU
+****************************/
+
+.menuContainer {
+    font-size: 120%;
+    width: 70%;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.05;
+  }
+  
+  .menuContainer>ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .menuContainer>ul>li {
+    position: relative;
+    cursor: default;
+  }
+  
+  .menuContainer>ul>li>ul {
+    position: absolute;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    margin-top:2px;
+    /*
+    Transition appliquée à la sortie du survol :
+      visibility est animée en 0 seconde après un délai de 200ms correspondant à la durée de la transition appliquée à opacity.
+      Autrement dit, lorsque le survol prend fin, on passe l'opacity à 0 en 200ms puis on passe la visibility à hidden.
+    */
+    transition: opacity .2s ease-in-out, visibility 0s ease-in-out .2s;
+  }
+  
+  .menuContainer>ul>li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    /*
+    Transition appliquée à l'entrée du survol :
+      On anime l'opacity de 0 à 1 en 500ms.
+    */
+    transition: opacity .5s ease-in-out;
+  }
+  
+  .menuContainer>ul li>a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .menuContainer>ul li>a::before {
+    content: attr(name);
+    color: red;
+    position: absolute;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .menuContainer>ul li>a:hover::before {
+    width: 100%;
+  }
+  
+  .menuContainer>ul li>a::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 1px;
+    height: 1px;
+    background: red;
+    box-shadow: 0px 0px 8px 3px red;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  .menuContainer>ul li>a:hover::after {
+    left: calc(100% + 10px);
+  }

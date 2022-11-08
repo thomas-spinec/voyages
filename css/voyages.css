@@ -1,28 +1,252 @@
 /****************************
+*           CHARTE
+****************************
+#fae6b1 --> beige/jaune
+#ffa101 --> orange
+#b3dee5 --> bleu clair
+#31525b --> bleu foncé
+Typographie :
+  Bookman --> http://www.fonts.com/font/monotype/bookman '(élégance ancien temps)
+  Georgia --> http://www.fonts.com/font/monotype/georgia '(élégance moderne, lisibilité)
+  Century Gothic --> http://www.fonts.com/font/monotype/century-gothic '(lisibilité, épurée, confortable)
+  Courrier New --> http://www.fonts.com/font/monotype/courier-new '(serif, anciennes machines à écrire)
+  Times --> http://www.fonts.com/font/monotype/times-new-roman '(aspect officiel)
+
+  Pacifico --> http://www.fonts.com/font/monotype/reklame-script '(titres/voyage, aventure, exotisme)
+
+
+/****************************
 *           RESET
 ****************************/
-html,body {margin:0;padding:0} 
-ul li {list-style: none;}
-body {font-family: 'Arial';}
-p {
-    font-size: 16px;
-    font-family: Arial, Lucida, sans-serif;
-    color: #000;
-}
+/*DÉBUT RESET*/
+html,
+body,
+div,
+ul,
+li,
 a {
-    text-decoration: none;
-    font-size: 14px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: Arial, Helvetica, sans-serif;
+
+body {
+  line-height: 1;
 }
+
+ul {
+  list-style: none;
+}
+
+a:link {
+  color: #ffa120;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #979191;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b3dee5;
+  text-decoration: none;
+}
+
+a:active {
+  color: rgb(174, 16, 16);
+  text-decoration: none;
+}
+/*FIN RESET*/
+
+h1, h2, h3, h4, h5, h6 {font-family: Arial, Helvetica, sans-serif;}
 h1 {font-size: 48px;}
 h2 {font-size: 40px;}
 h3 {font-size: 30px;}
-h4 {font-size: 22px;}
+h4 {font-size: 20px; line-height: 0.4}
 h5 {font-size: 15px;}
 h6 {font-size: 13px;}
 
-body {}
-header {}
-.container {}
+body#index {
+  background: #b3dee5;
+  background: url(../img/map.png) no-repeat center top fixed;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #31525B;
+  height: 50px;
+  position: fixed;
+  padding-top: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.title {
+  color: #ffa101;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 3%;
+  text-shadow: 1px 1px 1px #31525B;
+  width: 30%;
+  height: 50px;
+}
+.title h3 {
+  margin: 0;
+  padding-top: 8px;
+  color: #b3dee5;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/****************************
+*           TOOLS
+****************************/
+.row {display: flex; padding: 0 15px;}
+.col {flex: 1; padding: 0 15px;}
+.wrap {flex-wrap: wrap;}
+
+/****************************
+*           MENU
+****************************/
+/* nav */
+.nav-menu,.nav-menu ul,.nav-menu li,.nav-menu a { margin: 0; padding: 0; line-height: normal; list-style: none; display: block; position: relative; }
+.nav-menu ul { opacity: 0; position: absolute; top: 100%; left: -9999px; z-index: 999; -webkit-transition: opacity .3s; transition: opacity .3s; }
+.nav-menu li:hover > ul { left: 0; opacity: 1; z-index: 1000; }
+.nav-menu ul li:hover > ul { top: 0; left: 100%; }
+.nav-menu li { cursor: pointer; float: left; white-space: nowrap; }
+.nav-menu ul li { float: none; }
+
+/* sub largeur */
+.nav-menu ul { 
+  min-width: 10em;
+  padding-top: 5px;
+  -webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.25); 
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.25); 
+}
+
+/* center */
+.nav-center { float: right; right: 50%; }
+.nav-center > li { left: 50%; }
+.nav-right { float: right; padding-right: 250px; }
+/* root */
+.nav-menu a {
+  padding: 0 10px;
+  color: #FAE6B1;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+/* root: active */
+.nav-menu > li > .nav-active { background-color: rgba(0,0,0,0.05); }
+
+/* root: hover/persistence */
+.nav-menu a:hover,.nav-menu a:focus,.nav-menu li:hover a {
+  padding-top: 5px;
+  background: #31525B;
+  color: #FFF;
+  transition: .5s;
+}
+
+/* 2 */
+.nav-menu li li a,.nav-menu li:hover li a {
+  padding: 8px 10px;
+  background: #31525B;
+  color: #FFF;
+  font-size: 12px;
+  line-height: normal;
+}
+
+/* 2: hover/persistance */
+.nav-menu li:hover li a:hover,.nav-menu li:hover li a:focus,.nav-menu li:hover li:hover a {
+  background: #444;
+}
+
+/* 3 */
+.nav-menu li:hover li:hover li a {
+  background: #444;
+}
+
+/* 3: hover/persistance */
+.nav-menu li:hover li:hover li a:hover,.nav-menu li:hover li:hover li a:focus,.nav-menu li:hover li:hover li:hover a {
+  background: #333;
+}
+
+/* 4 */
+.nav-menu li:hover li:hover li:hover li a {
+  background: #333;
+}
+
+/* 4: hover */
+.nav-menu li:hover li:hover li:hover li a:hover,.nav-menu li:hover li:hover li:hover li a:focus {
+  background: #222; 
+}
+.nav-menu ul li {
+  padding-left: 15px;
+}
+.nav-menu ul li ul li:hover {
+  background: #333;
+  background-size: cover;;
+  color: #FFF;
+
+}
+
+/* /* vertical */
+/* .nav-vertical { max-width: 220px; }
+.nav-vertical ul { top: 0; left: -9999px; }
+.nav-vertical li { width: 100%; float: none; }
+.nav-vertical li:hover > ul { left: 100%; } */ 
+
+/****************************
+*           FORMS
+****************************/
+.forms {
+  padding-top: 2%;
+}
+label {
+  min-width: 245px;
+  display: inline-block;
+  color: #fff;
+  padding-top: 1em;
+}
+
+/****************************
+*           FOOTER
+****************************/
+footer {
+  background-color: #31525B;
+  color: #b3dee5;
+  height: 220px;
+  padding: 25px 3%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.footer-bottom a {
+  color: #fae6b1;
+  text-decoration: none;
+}
+.short {
+  line-height: 0.2;
+}
+
+
+
+
+@media only screen and (max-width: 767px) { 
+  body { /* La taille de l'image est 93% plus petite pour réduire le temps de chargement en connection mobile */ 
+    background-image: url(../img/map.png); } 
+  } 
