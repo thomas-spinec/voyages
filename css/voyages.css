@@ -247,6 +247,6 @@ footer {
 
 
 @media only screen and (max-width: 767px) { 
-  body { /* La taille de l'image est 93% plus petite pour réduire le temps de chargement en connection mobile */ 
+  body { 
     background-image: url(../img/map.png); } 
   } 
