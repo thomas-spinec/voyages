@@ -1,0 +1,108 @@
+/* ***************************************
+         BLOC (INFORMATIONS)
+****************************************** */
+.informations {
+  background: url(lion.jpg) no-repeat;
+  background-size: 100%;
+  background-position: cover;
+  padding: 120px 0;
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 250px;
+  margin-top: 2%;
+}
+
+.informations h1,
+p,
+em,
+h2,
+h3 {
+  text-align: center;
+  font-family: "roboto";
+}
+
+.image_centrer {
+  display: flex;
+  justify-content: center;
+}
+
+.bouton_jaune {
+  border-color: #ffca4b;
+  background-color: #ffca4b;
+  font-size: 16px;
+  margin-bottom: 3%;
+  padding-bottom: 2%;
+  margin-top: 2%;
+}
+
+.boite_horizontale {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 30%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-right: 5.5%;
+  margin-left: 5.5%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  background-color: transparent;
+  box-shadow: 0px 0px 70px 0px rgb(71 74 182 / 20%);
+  border-radius: 10px;
+}
+
+.footer_2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000000;
+  color: #f2ffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.reseaux {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.reseaux a {
+  margin-right: 8px;
+}
+
+.logo_footer {
+  width: 100%;
+  height: auto;
+}
+
+.centrer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.morph img {
+  display: flex;
+  width: 100%;
+  height: 240px;
+  -webkit-filter: grayscale(0) blur(0px);
+  filter: grayscale(0) blur(0px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  align-items: top;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.morph :hover img {
+  width: 150px; /* on affiche l'image au carré */
+  height: 150px;
+  border-radius: 50%; /* on arrondit l'image */
+  -webkit-transform: rotate(360deg); /* rotation de l'image */
+  transform: rotate(360deg);
+}
