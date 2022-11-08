@@ -12,13 +12,27 @@
   margin-top: 2%;
 }
 
+
+
+/* ***************************************
+        DEUXIEME BLOC (INFORMATIONS)
+****************************************** */
+
+image {
+  background: url(girafes.jpg) no-repeat;
+  background-size: 50vh;
+  background-position: top right;
+  padding: 10px 0;
+  color: #000;
+
+}
+
 .informations h1,
 p,
 em,
 h2,
 h3 {
   text-align: center;
-  font-family: "roboto";
 }
 
 .image_centrer {
@@ -106,3 +120,4 @@ h3 {
   -webkit-transform: rotate(360deg); /* rotation de l'image */
   transform: rotate(360deg);
 }
+=======
