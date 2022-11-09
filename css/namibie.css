@@ -1,52 +1,13 @@
 /* ***************************************
-         BLOC (INFORMATIONS)
+         Page NAMIBIE
 ****************************************** */
-.informations {
-  background: url(../img/lion.jpg) no-repeat;
-  background-size: 100%;
-  background-position: cover;
-  padding: 120px 0;
+.image1 {
   box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 250px;
-  margin-top: 2%;
-}
-
-
-
-/* ***************************************
-        DEUXIEME BLOC (INFORMATIONS)
-****************************************** */
-
-image {
-  background: url(girafes.jpg) no-repeat;
-  background-size: 50vh;
-  background-position: top right;
-  padding: 10px 0;
-  color: #000;
-
-}
-
-.informations h1,
-p,
-em,
-h2,
-h3 {
-  text-align: center;
 }
 
 .image_centrer {
   display: flex;
   justify-content: center;
-}
-
-.bouton_jaune {
-  border-color: #ffca4b;
-  background-color: #ffca4b;
-  font-size: 16px;
-  margin-bottom: 3%;
-  padding-bottom: 2%;
-  margin-top: 2%;
 }
 
 .boite_horizontale {
@@ -64,33 +25,6 @@ h3 {
   background-color: transparent;
   box-shadow: 0px 0px 70px 0px rgb(71 74 182 / 20%);
   border-radius: 10px;
-}
-
-.footer_2 {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #000000;
-  color: #f2ffff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.reseaux {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  list-style-type: none;
-}
-
-.reseaux a {
-  margin-right: 8px;
-}
-
-.logo_footer {
-  width: 100%;
-  height: auto;
 }
 
 .centrer {
@@ -118,4 +52,22 @@ h3 {
   -webkit-transform: rotate(360deg); /* rotation de l'image */
   transform: rotate(360deg);
 }
-=======
+
+.tableau {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#na {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 10px;
+}
