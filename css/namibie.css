@@ -68,6 +68,39 @@
 
 th,
 td {
-  border: 1px solid black;
+  border: 1px solid #fff;
   padding: 10px;
 }
+
+th {
+  background-color: #31525b;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #b3dee5;
+}
+
+#na {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+}
+
+/* 
+ */
