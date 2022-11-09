@@ -14,20 +14,20 @@ font-family: 'Vollkorn', serif;
   scroll-behavior: smooth;
 }
 
-#ca_body h1 {
+#ca_main h1 {
   font-family: "Lobster Two", cursive;
   color: #ffa101;
 }
 
-#ca_body h2,
-h3,
-h4 {
+#ca_main h2,
+#ca_main h3,
+#ca_main h4 {
   font-family: "Vollkorn", serif;
   color: #31525b;
 }
 
 #ca_body p,
-ul {
+#ca_main ul {
   font-family: "Alice", serif;
   font-size: 25px;
 }
