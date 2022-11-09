@@ -1,6 +1,7 @@
-#body_italie{
+body#italie {
     background-color: #fae6b1;
     color: #31525b;
+    text-align: justify;
 }
 
 #h1_italie{
@@ -14,13 +15,21 @@
 
 #tableau_italie{
     width: 100%;
-   
 }
   
-  #th_italie,#td_italie {
+#tableau_italie th{
+    color: red;
+}
+
+#tableau_italie td{
+    color: green;
+}
+
+#th_italie,#td_italie {
     border: 1px solid black;
     padding: 10px;
-  }
+    font-weight: bold;
+}
 
 .div_italie{
     width: 100%;
@@ -57,7 +66,7 @@
 }
 
 .italie_2{
-    margin-left: 20%;
+    margin-left: 25%;
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -82,7 +91,20 @@
     display: flex;
 }
 
-.italie_2_ville_contenu{
+.italie_embleme{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
 
-    width: 50%;
+.italie_2_ville_contenu{
+    width: 50%;  
+}
+
+.italie_2_ville_contenu p{
+    font-size: larger;
+    margin: 5%;
+}
+.italie_2_ville_contenu img{
+    width: 30vw;
 }
