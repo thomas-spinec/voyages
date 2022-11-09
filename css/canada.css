@@ -260,3 +260,79 @@ th {
 .images_canada:hover #ca_hiver {
   opacity: 1;
 }
+
+/* **************************
+    Section Formulaire
+*************************** */
+
+#ca_form_width {
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+#ca_formulaire form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#ca_formulaire div {
+  padding-bottom: 1%;
+}
+
+#ca_formulaire div > input,
+#ca_formulaire div > textarea {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #898246;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#ca_formulaire div > input::placeholder,
+#ca_formulaire div > textarea::placeholder {
+  color: #275fa0;
+  text-align: center;
+}
+
+.form_left {
+  width: 49%;
+}
+
+.form_right {
+  width: 49%;
+}
+
+.form_left input {
+  width: 100%;
+}
+
+.form_right input {
+  width: 100%;
+}
+
+#form_center {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+#form_center input,
+#form_center textarea {
+  width: 100%;
+}
+
+#ca_button button {
+  background-color: #275fa0;
+  color: #ffffff;
+  font-size: 20px;
+  border-width: 1px;
+  border-radius: 15px;
+}
+
+#ca_button {
+  display: block;
+  margin-left: auto;
+}

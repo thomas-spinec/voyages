@@ -331,7 +331,61 @@
       </section>
       <!-- end section voyage-->
       <section id="ca_formulaire">
-        <div class="ca_centrage"></div>
+        <div class="ca_centrage">
+          <h2>Vous voulez plus d'informations?</h2>
+          <p>
+            Remplissez le formulaire ci-dessous, et nous vous contacterons
+            rapidement.
+          </p>
+          <div id="ca_form_width">
+            <form action="index.html" method="post">
+              <div class="ca_form form_left">
+                <label for="nom"></label>
+                <input type="text" name="nom" id="nom" placeholder="Nom" />
+              </div>
+              <div class="ca_form form_right">
+                <label for="prenom"></label>
+                <input
+                  type="text"
+                  name="prenom"
+                  id="prenom"
+                  placeholder="Prénom"
+                />
+              </div>
+              <div class="ca_form form_left">
+                <label for="email"></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="ca_form form_right">
+                <label for="telephone"></label>
+                <input
+                  type="tel"
+                  name="telephone"
+                  id="telephone"
+                  placeholder="Téléphone"
+                />
+              </div>
+              <div class="ca_form" id="form_center">
+                <label for="message"></label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="8"
+                  cols="70"
+                  placeholder="Votre message"
+                ></textarea>
+              </div>
+              <div id="ca_button">
+                <button type="submit">Envoyer</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
       <!-- end section formulaire-->
     </main>
