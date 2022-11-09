@@ -80,7 +80,7 @@ th {
 /* ******************
     Section baleine
 ******************* */
-#img_txt_baleines {
+.img_txt_canada {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,7 +114,6 @@ th {
   display: flex;
   justify-content: center;
   width: 30vw;
-  /* max-width: 50vw; */
   height: auto;
   margin-right: auto;
   margin-left: auto;
@@ -122,5 +121,31 @@ th {
 
 .ca_photo_centre img {
   width: 100%;
+  max-width: 400px;
   height: auto;
+}
+
+/* *******************
+    Section Niagara's falls
+********************* */
+
+.img_niagara {
+  width: 40%;
+  float: right;
+  margin-left: 2%;
+}
+
+.img_niagara img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.ca_niagara_texte {
+  float: left;
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
