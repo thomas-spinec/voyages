@@ -2,11 +2,16 @@
 Styles généraux de la page Canada
 **************** */
 
-#ca_main {
+main#ca_main {
   margin-top: 60px;
-  /* margin-bottom: 2%; */
+  margin-bottom: 2%;
   width: 100%;
   overflow: hidden;
+}
+
+#ca_main p {
+  text-align: justify;
+  letter-spacing: 0.2px;
 }
 
 /* ***************
@@ -66,4 +71,56 @@ th {
   margin-bottom: 1%;
   box-shadow: 0px 0px 60px 0px #898246;
   border-radius: 10px;
+}
+
+/* ******************
+    Section info
+******************* */
+
+/* ******************
+    Section baleine
+******************* */
+#img_txt_baleines {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+#img_baleines {
+  width: 40%;
+  height: auto;
+  float: left;
+  margin-right: 2%;
+}
+
+#img_baleines img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+#ca_baleines_texte {
+  float: right;
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ca_photo_centre {
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+  /* max-width: 50vw; */
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ca_photo_centre img {
+  width: 100%;
+  height: auto;
 }
