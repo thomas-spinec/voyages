@@ -2,8 +2,38 @@
 Styles généraux de la page Canada
 **************** */
 
+/* Font */
+/*
+font-family: 'Alice', serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Vollkorn', serif; 
+*/
+
+#ca_body {
+  background: transparent;
+  scroll-behavior: smooth;
+}
+
+#ca_body h1 {
+  font-family: "Lobster Two", cursive;
+  color: #ffa101;
+}
+
+#ca_body h2,
+h3,
+h4 {
+  font-family: "Vollkorn", serif;
+  color: #31525b;
+}
+
+#ca_body p,
+ul {
+  font-family: "Alice", serif;
+  font-size: 25px;
+}
+
 main#ca_main {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 2%;
   width: 100%;
   overflow: hidden;
@@ -38,6 +68,13 @@ main#ca_main {
   width: 20vh;
   height: auto;
   opacity: 40%;
+  transition: 0.3s;
+}
+
+#ca_img_hero:hover {
+  width: 40vh;
+  height: auto;
+  opacity: 100%;
 }
 
 #ca_texte_hero {
@@ -73,6 +110,21 @@ th {
   border-radius: 10px;
 }
 
+#ca_accroche_texte {
+  animation-duration: 2s;
+  animation-name: popoff;
+}
+
+@keyframes popoff {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
 /* ******************
     Section info
 ******************* */
@@ -80,7 +132,7 @@ th {
 /* ******************
     Section baleine
 ******************* */
-#img_txt_baleines {
+.img_txt_canada {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -93,12 +145,25 @@ th {
   height: auto;
   float: left;
   margin-right: 2%;
+
+  animation-duration: 5s;
+  animation-name: slideright;
 }
 
 #img_baleines img {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   height: auto;
+}
+
+@keyframes slideright {
+  from {
+    padding-right: 100%;
+  }
+
+  to {
+    padding-right: 0%;
+  }
 }
 
 #ca_baleines_texte {
@@ -108,13 +173,14 @@ th {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  animation-duration: 8s;
+  animation-name: popoff;
 }
 
 .ca_photo_centre {
   display: flex;
   justify-content: center;
   width: 30vw;
-  /* max-width: 50vw; */
   height: auto;
   margin-right: auto;
   margin-left: auto;
@@ -122,5 +188,239 @@ th {
 
 .ca_photo_centre img {
   width: 100%;
+  max-width: 400px;
   height: auto;
+}
+
+/* *******************
+    Section Niagara's falls
+********************* */
+
+.img_niagara {
+  width: 40%;
+  float: right;
+  margin-left: 2%;
+  animation-duration: 5s;
+  animation-name: slideright;
+}
+
+@keyframes slideright {
+  from {
+    padding-right: 100%;
+  }
+
+  to {
+    padding-right: 0%;
+  }
+}
+
+.img_niagara img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.ca_niagara_texte {
+  float: left;
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  animation-duration: 8s;
+  animation-name: popoff;
+}
+
+.ca_niagara_texte ul {
+  list-style-type: "- ";
+}
+
+.ca_niagara_texte ul li {
+  margin-bottom: 5%;
+}
+
+/* ****************************
+    Section Parcs
+***************************** */
+
+#img_parc_gauche {
+  width: 50%;
+  float: left;
+  margin-right: 2%;
+}
+
+#img_parc_gauche img {
+  width: 100%;
+  height: auto;
+}
+
+#img_parc_droite {
+  width: 50%;
+  float: right;
+  margin-left: 2%;
+}
+
+#img_parc_droite img {
+  width: 100%;
+  height: auto;
+}
+
+#ca_parc_txt_droite {
+  width: 45%;
+  float: right;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#ca_parc_txt_gauche {
+  width: 45%;
+  float: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* **************************
+    Section Saison
+*************************** */
+
+#img_saisons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.images_canada {
+  width: 45%;
+  height: auto;
+  margin: 1%;
+  display: inline-block;
+  position: relative;
+}
+
+.images_canada img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.texte_hover_canada {
+  padding: 30% 40%;
+  color: white;
+  font-size: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#ca_hiver {
+  padding: 28% 42%;
+  color: white;
+  font-size: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.images_canada:hover img {
+  filter: grayscale(1.5);
+}
+
+.images_canada:hover .texte_hover_canada,
+.images_canada:hover #ca_hiver {
+  opacity: 1;
+}
+
+/* **************************
+    Section Formulaire
+*************************** */
+
+#ca_form_width {
+  width: 50%;
+  margin: auto;
+  margin-top: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: #31525b;
+  border-radius: 15px;
+}
+
+#ca_formulaire form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#ca_formulaire div {
+  padding-bottom: 1%;
+}
+
+#ca_formulaire div > input,
+#ca_formulaire div > textarea {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ffa101;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+#ca_formulaire div > input::placeholder,
+#ca_formulaire div > textarea::placeholder {
+  color: #31525b;
+  text-align: center;
+}
+
+.form_left {
+  width: 49%;
+}
+
+.form_right {
+  width: 49%;
+}
+
+.form_left input {
+  width: 100%;
+}
+
+.form_right input {
+  width: 100%;
+}
+
+#form_center {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+#form_center input,
+#form_center textarea {
+  width: 100%;
+}
+
+#ca_button button {
+  background-color: #fff;
+  border-color: #ffa101;
+  color: #31525b;
+  font-size: 20px;
+  border-width: 3px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+#ca_button {
+  display: block;
+  margin-left: auto;
+}
+
+#ca_button button:hover {
+  background-color: #ffa101;
+  color: #fff;
 }
