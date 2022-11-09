@@ -2,8 +2,12 @@
 Styles généraux de la page Canada
 **************** */
 
+#ca_body {
+  background: transparent;
+}
+
 main#ca_main {
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 2%;
   width: 100%;
   overflow: hidden;
@@ -148,4 +152,111 @@ th {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.ca_niagara_texte ul {
+  list-style-type: "- ";
+}
+
+.ca_niagara_texte ul li {
+  margin-bottom: 5%;
+}
+
+/* ****************************
+    Section Parcs
+***************************** */
+
+#img_parc_gauche {
+  width: 50%;
+  float: left;
+  margin-right: 2%;
+}
+
+#img_parc_gauche img {
+  width: 100%;
+  height: auto;
+}
+
+#img_parc_droite {
+  width: 50%;
+  float: right;
+  margin-left: 2%;
+}
+
+#img_parc_droite img {
+  width: 100%;
+  height: auto;
+}
+
+#ca_parc_txt_droite {
+  width: 45%;
+  float: right;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#ca_parc_txt_gauche {
+  width: 45%;
+  float: left;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* **************************
+    Section Saison
+*************************** */
+
+#img_saisons {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.images_canada {
+  width: 45%;
+  height: auto;
+  margin: 1%;
+  display: inline-block;
+  position: relative;
+}
+
+.images_canada img {
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.texte_hover_canada {
+  padding: 30% 40%;
+  color: white;
+  font-size: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#ca_hiver {
+  padding: 25% 42%;
+  color: white;
+  font-size: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.images_canada:hover img {
+  filter: grayscale(1.5);
+}
+
+.images_canada:hover .texte_hover_canada,
+.images_canada:hover #ca_hiver {
+  opacity: 1;
 }
