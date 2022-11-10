@@ -42,7 +42,7 @@
   justify-content: center;
   align-items: center;
 }
-
+/*
 .morph img {
   display: flex;
   width: 100%;
@@ -55,13 +55,16 @@
   margin-top: 7%;
 }
 
+
 .morph :hover img {
-  width: 150px; /* on affiche l'image au carré */
+  width: 150px; /* on affiche l'image au carré 
   height: 150px;
-  border-radius: 50%; /* on arrondit l'image */
-  -webkit-transform: rotate(360deg); /* rotation de l'image */
+  border-radius: 50%; /* on arrondit l'image 
+  -webkit-transform: rotate(360deg); /* rotation de l'image 
   transform: rotate(360deg);
 }
+
+*/
 
 .tableau {
   display: flex;
@@ -146,5 +149,6 @@ tr:hover {
 .duo img:hover {
   transform: rotate3d(0, 1, 0, 180deg);
 }
+
 /* 
  */
