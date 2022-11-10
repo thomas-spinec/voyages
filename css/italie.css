@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;800&display=swap');
 body#italie {
     background-color: #fae6b1;
     color: #31525b;
     text-align: justify;
+    font-family: 'Roboto Slab', serif;
+    line-height: 25px;
+    font-weight: bold;
+    font-size: large;
 }
 
 #h1_italie{
     color: red;
     margin-top: 6%;
+}
+
+#h2_italie{
+    color: rgb(255,0,0);
+    color: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(37,196,0,1) 100%);
 }
 
 #h3_italie{
@@ -42,7 +52,7 @@ body#italie {
     height: 100%;
     background-image: url("../img/italieMenu.png");
     background-size: 100%;
-    opacity: 0.6;
+    opacity: 0.7;
     position: fixed;
     
 }
@@ -58,12 +68,31 @@ body#italie {
 }
 
 .menuItalie{
-    height: 15%;
+    height: 13%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 
 }
+.italie_1 a:link{
+    color: black;
+    opacity: 0.8;
+}
+
+.italie_1 a:hover{
+    background-image: url("../img/italie_drapeau.png");
+    background-size: 100%;
+    border-radius: 10%;
+}
+
+.italie_1 a:visited{
+    color: black;
+    opacity: 0.8;
+}
+
+
+
 
 .italie_2{
     margin-left: 25%;
@@ -81,7 +110,7 @@ body#italie {
     margin-bottom: 2%;
     border-style: solid;
     border-width: 10px;
-    border-image: linear-gradient(90deg, rgb(255, 0, 0), rgb(255, 255, 255), rgb(0, 214, 36)) 1;
+    border-image: linear-gradient(90deg, rgb(0, 214, 36), rgb(255, 255, 255), rgb(255, 0, 0)) 1;
 }
 
 .italie_2_ville{
@@ -108,3 +137,123 @@ body#italie {
 .italie_2_ville_contenu img{
     width: 30vw;
 }
+
+
+/*Diapo*/
+*{box-sizing:border-box}
+
+img{
+
+max-width: 100%;
+
+}
+
+/*pour le saut de page, on cree une class que l'on met en display:none*/
+.target{
+
+    display: none
+    
+    }
+    
+    
+    /* englobe le slider */
+    
+    .cadre_diapo{
+    
+    max-width: 65%;
+    margin: 2rem auto;
+    overflow: hidden;        
+    }
+    
+    .interieur_diapo{
+        
+    display: flex;
+    width: 400%;
+    transition: transform .6s ease-in-out
+        
+        }
+    
+    .description{
+    
+    position: relative;
+    
+    }
+    
+    .description span{
+    
+    position: absolute;
+    left: 0;
+    top: 2%;
+    font-size: 75%;
+    display: flex;
+    padding: .5rem;
+    justify-content: center;
+    color: white;
+    background: hsla(0,0%,0%,.35)
+        
+        }
+        
+        
+    #votre_id1:target ~ .cadre_diapo .interieur_diapo{
+    
+    transform:translatex(0)
+    
+    }/*image 1*/
+    
+    #votre_id2:target ~ .cadre_diapo .interieur_diapo{
+    
+    transform:translatex(-25%)
+    
+    }/*image 2*/
+    
+    #votre_id3:target ~ .cadre_diapo .interieur_diapo{
+    
+    transform:translatex(-50%)
+    
+    }/*image 3*/
+    
+    #votre_id4:target ~ .cadre_diapo .interieur_diapo{
+    
+    transform:translatex(-75%)
+    
+    }/*image 4*/
+    
+    
+    
+    
+    
+    /*navigation avec images miniatures*/
+    .navigation_diapo{
+        
+    display: flex; /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+        
+        }
+    
+    .navigation_diapo li {
+        
+        padding: .25rem;
+        
+        }
+    
+    .navigation_diapo img{
+    
+    border: 3px solid white;
+    box-shadow:0 0 5px hsla(0,0%,0%,.4);
+    
+        
+        }
+        
+        
+        @media (min-width:31.25rem){
+            
+            .description span{
+                
+                font-size: initial
+            
+            }
+        
+        }
+/*fin du diapo*/
