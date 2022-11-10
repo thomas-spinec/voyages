@@ -94,6 +94,7 @@ header {
 .title h3 {
   margin: 0;
   color: #b3dee5;
+  line-height: 1;
 }
 .map {
   width: 100%;
@@ -216,7 +217,6 @@ a.in_cv {
   width: 250px;
   display: block;
   line-height: 1.2;
-  padding-top: 10px;
 }
 a.in_cv:hover {
   color: #ffa101;
