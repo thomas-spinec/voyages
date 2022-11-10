@@ -5,16 +5,6 @@
 #ffa101 --> orange
 #b3dee5 --> bleu clair
 #31525b --> bleu foncé
-Typographie :
-  Bookman --> http://www.fonts.com/font/monotype/bookman '(élégance ancien temps)
-  Georgia --> http://www.fonts.com/font/monotype/georgia '(élégance moderne, lisibilité)
-  Century Gothic --> http://www.fonts.com/font/monotype/century-gothic '(lisibilité, épurée, confortable)
-  Courrier New --> http://www.fonts.com/font/monotype/courier-new '(serif, anciennes machines à écrire)
-  Times --> http://www.fonts.com/font/monotype/times-new-roman '(aspect officiel)
-
-  Pacifico --> http://www.fonts.com/font/monotype/reklame-script '(titres/voyage, aventure, exotisme)
-
-
 /****************************
 *           RESET
 ****************************/
@@ -64,12 +54,12 @@ a:active {
 /*FIN RESET*/
 
 h1, h2, h3, h4, h5, h6 {font-family: Arial, Helvetica, sans-serif;}
-h1 {font-size: 48px; line-height: 1;}
-h2 {font-size: 40px; line-height: 0.9;}
-h3 {font-size: 30px; line-height: 0.8;}
-h4 {font-size: 20px; line-height: 0.7;}
-h5 {font-size: 15px; line-height: 0.6;}
-h6 {font-size: 13px; line-height: 0.5;}
+h1 {font-size: 48px; line-height: 2;}
+h2 {font-size: 40px; line-height: 1.9;}
+h3 {font-size: 30px; line-height: 1.8;}
+h4 {font-size: 20px; line-height: 1.7;}
+h5 {font-size: 15px; line-height: 1.4;}
+h6 {font-size: 13px; line-height: 1;}
 
 body#index {
   background: -moz-radial-gradient(center, ellipse cover,  rgba(32,124,202,0) 50%, rgba(32,124,202,0.28) 64%, rgba(32,124,202,0.58) 79%, rgba(49,82,91,1) 100%); /* FF3.6-15 */
@@ -93,7 +83,7 @@ header {
 }
 .title {
   color: #ffa101;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Lato', sans-serif;
   font-size: 30px;
   text-align: left;
   padding-left: 3%;
@@ -251,9 +241,3 @@ label {
   padding-top: 1em;
 }
 
-
-
-@media only screen and (max-width: 767px) { 
-  body { 
-    background-image: url(../img/map_mobile.png); } 
-  } 
