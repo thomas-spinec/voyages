@@ -109,8 +109,6 @@ td {
     background:rgba(164, 164, 164, 0.5);
     padding: 5px;
 }
-
-
 /****************************
 *          hero 
 *****************************/
@@ -155,7 +153,6 @@ h1.in {
 .in_table td {width: 200px;}
 .in_icons {
     display: flex;
-
     color: #31525B;
 }
 
@@ -165,14 +162,12 @@ h1.in {
     border: 2px solid #31525B;
     border-radius: 50%;
     margin: 10px;
-
 }
 /*****************************************
-*     images chevauchant le header
+*              images
 ******************************************/
 .img_wrap {
     display: inline-block;
-    padding: 10px;
     width: 100%;
 }
 .in_center_items {
@@ -180,126 +175,6 @@ h1.in {
 }
 .in_icon {
     width: 70%;
-}
-/****************************
-*  formatage du texte 
-*****************************/
-body#in p {
-    font-family: "Lato", sans-serif;
-    line-height: 1.5;
-}
-.justify {
-    text-align: justify;
-}
-.tleft {
-    text-align: left;
-}
-.tright {
-    text-align: right;
-}
-.tcenter {
-    text-align: center;
-}
-.marge {
-    padding: 0 20px 
-}
-.small {
-    font-size: 0.8em;
-    line-height: 1;
-}
-.blue {
-    color: #B3D5C6;
-}
-.roboto {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
-}
-blockquote {
-    font-size: 15px;
-    font-style: italic;
-    color: #31525B;
-    text-align: left;
-}
-.in_txt {
-    text-align: justify; 
-    width: 100%;  
-    margin: 2% auto;
-}
-.pin {
-    text-align: justify;
-    padding: 10px;
-    color: #31525B;
-}
-.pin h4 {display: inline-block;}
-
-/*** meteo ***/
-#meteo {
-    max-width: 100%;
-    border:2px solid #ccc;
-}
-td {
-    padding: 0 10px;
-}
-.entete{
-    background:rgba(164, 164, 164, 0.5);
-    padding: 5px;
-}
-
-
-/****************************
-*          hero 
-*****************************/
-.in_hero {
-    background-image: url(../img/indonesie/volcano.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 70vh;
-    width: 100%;
-}
-.in_hero-txt {
-    width: 80%;
-    text-align: center;
-}
-h1.in {
-    color: rgba(255, 255, 255, 0.5);
-    font-family: 'Playfair Display', serif;
-    font-size: 7em;
-    padding-top: 5%;
-    text-align: center;
-    margin: auto;
-}
-.in_slogan p {
-    color: #31525B;
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: justify;
-    line-height: 1.5;
-}
-/****************************
-*          ICONES
-****************************/
-.in_table {
-    width: 100%;
-    margin-top: 20px;
-    padding: 0;
-    color: #818181;
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    text-align: center;
-}
-.in_table td {width: 200px;}
-.in_icons {
-    display: flex;
-
-    color: #31525B;
-}
-
-.fa-solid, .fas {
-    font-weight: 900;
-    color: #ccc;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    padding: 15px;
 }
 /*****************************************
 *     images chevauchant le header
@@ -329,8 +204,6 @@ h1.in {
 .in_gastronomie {
     width: 300px;
     height: auto;
-
-
 }
 /*****************************************
 *                slider
