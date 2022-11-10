@@ -48,6 +48,10 @@ main#ca_main {
   letter-spacing: 0.2px;
 }
 
+#ca_margin {
+  margin-bottom: 10%;
+}
+
 /* ***************
     Section Hero 
 *****************  */
@@ -291,8 +295,8 @@ th {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  margin-bottom: 1%;
-  position: relative;
+  margin-bottom: 10%;
+  /* position: relative; */
 }
 
 #parc_droite {
@@ -301,7 +305,7 @@ th {
   align-items: center;
   width: 100%;
   margin-bottom: 1%;
-  position: relative;
+  /* position: relative; */
 }
 
 #img_parc_gauche {
@@ -364,7 +368,7 @@ th {
 
 #parc_gauche:hover > #ca_parc_txt_droite {
   margin-right: 0;
-  margin-left: 50vw;
+  margin-left: 48vw;
   float: right;
 }
 
@@ -373,7 +377,7 @@ th {
 }
 
 #parc_droite:hover > #ca_parc_txt_gauche {
-  margin-right: 50vw;
+  margin-right: 50 vw;
   margin-left: 0;
   float: left;
 }
