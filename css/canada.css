@@ -26,6 +26,10 @@ font-family: 'Vollkorn', serif;
   color: #31525b;
 }
 
+#ca_main h4 {
+  margin-top: 6%;
+}
+
 #ca_body p,
 #ca_main ul {
   font-family: "Alice", serif;
@@ -49,7 +53,7 @@ main#ca_main {
 *****************  */
 
 #ca_hero {
-  background: #4d6f94 url(../img/canada1.jpg) no-repeat; /* image de fond */
+  background: #4d6f94 url(../img/canada/canada1.jpg) no-repeat; /* image de fond */
   background-size: cover;
   background-position: 50% 60%;
   width: 100%;
@@ -140,14 +144,23 @@ th {
   margin-bottom: 1%;
 }
 
-#img_baleines {
-  width: 40%;
-  height: auto;
-  float: left;
-  margin-right: 2%;
+#les_baleines {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1%;
+}
 
-  animation-duration: 5s;
-  animation-name: slideright;
+#img_baleines {
+  width: 45%;
+  position: absolute;
+  margin-left: 25vw;
+  margin-right: 0;
+  z-index: 0;
+
+  transition: 0.5s;
 }
 
 #img_baleines img {
@@ -156,25 +169,22 @@ th {
   height: auto;
 }
 
-@keyframes slideright {
-  from {
-    padding-right: 100%;
-  }
-
-  to {
-    padding-right: 0%;
-  }
+#ca_baleines_texte {
+  width: 50%;
+  position: relative;
+  z-index: 2;
+  float: right;
+  opacity: 0;
+  transition: 0.8s;
 }
 
-#ca_baleines_texte {
-  float: right;
-  width: 50%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  animation-duration: 8s;
-  animation-name: popoff;
+#les_baleines:hover > #img_baleines {
+  margin-left: 0;
+  float: left;
+}
+
+#les_baleines:hover > #ca_baleines_texte {
+  opacity: 1;
 }
 
 .ca_photo_centre {
@@ -196,39 +206,53 @@ th {
     Section Niagara's falls
 ********************* */
 
-.img_niagara {
-  width: 40%;
-  float: right;
-  margin-left: 2%;
-  animation-duration: 5s;
-  animation-name: slideright;
+#info_niagara {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1%;
 }
 
-@keyframes slideright {
-  from {
-    padding-right: 100%;
-  }
+#coeur_chute {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 3%;
+}
 
-  to {
-    padding-right: 0%;
-  }
+.img_niagara {
+  width: 50%;
+  position: absolute;
+  display: block;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  z-index: 0;
+
+  transition: 0.5s;
 }
 
 .img_niagara img {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   height: auto;
 }
 
 .ca_niagara_texte {
   float: left;
   width: 50%;
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  animation-duration: 8s;
-  animation-name: popoff;
+  opacity: 0;
+  transition: 0.8s;
+  margin-bottom: 5%;
 }
 
 .ca_niagara_texte ul {
@@ -239,14 +263,55 @@ th {
   margin-bottom: 5%;
 }
 
+#info_niagara:hover > .img_niagara {
+  margin-right: 0;
+  margin-left: 50vw;
+  float: right;
+}
+
+#info_niagara:hover > .ca_niagara_texte {
+  opacity: 1;
+}
+
+#coeur_chute:hover > .img_niagara {
+  margin-right: 0;
+  margin-left: 50vw;
+  float: right;
+}
+
+#coeur_chute:hover > .ca_niagara_texte {
+  opacity: 1;
+}
+
 /* ****************************
     Section Parcs
 ***************************** */
+#parc_gauche {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1%;
+  position: relative;
+}
+
+#parc_droite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1%;
+  position: relative;
+}
 
 #img_parc_gauche {
   width: 50%;
   float: left;
   margin-right: 2%;
+  z-index: 2;
+  position: relative;
+  opacity: 0;
+  transition: 0.8s;
 }
 
 #img_parc_gauche img {
@@ -258,6 +323,10 @@ th {
   width: 50%;
   float: right;
   margin-left: 2%;
+  z-index: 2;
+  position: relative;
+  opacity: 0;
+  transition: 0.8s;
 }
 
 #img_parc_droite img {
@@ -272,6 +341,11 @@ th {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  z-index: 0;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  transition: 0.5s;
 }
 
 #ca_parc_txt_gauche {
@@ -281,6 +355,31 @@ th {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  z-index: 0;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  transition: 0.5s;
+}
+
+#parc_gauche:hover > #ca_parc_txt_droite {
+  margin-right: 0;
+  margin-left: 50vw;
+  float: right;
+}
+
+#parc_gauche:hover > #img_parc_gauche {
+  opacity: 1;
+}
+
+#parc_droite:hover > #ca_parc_txt_gauche {
+  margin-right: 50vw;
+  margin-left: 0;
+  float: left;
+}
+
+#parc_droite:hover > #img_parc_droite {
+  opacity: 1;
 }
 
 /* **************************
