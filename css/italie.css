@@ -9,14 +9,15 @@ body#italie {
     font-size: large;
 }
 
+.photoHeader {
+    width: 60px;
+    height: 60px;
+    float: right; 
+  }
+
 #h1_italie{
     color: red;
     margin-top: 6%;
-}
-
-#h2_italie{
-    color: rgb(255,0,0);
-    color: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(37,196,0,1) 100%);
 }
 
 #h3_italie{
@@ -73,6 +74,7 @@ body#italie {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    font-size: xx-large;
 
 }
 .italie_1 a:link{
