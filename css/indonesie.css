@@ -42,14 +42,30 @@
 }
 .img_wrap {
     display: inline-block;
-    padding: 10px;
     width: 100%;
+    padding: 20px 0 0;
 }
 .in_center_items {
     align-items: center;
 }
 .in_icon {
     width: 70%;
+}
+.mini_map {
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+}
+.bestcity {
+    width: 60%;
+    display: inline-block;
+    padding: 0 50px;   
+    clear: both;
+}
+.goodfly {
+    text-align: center;
+    color: #31525B;
+    margin: auto;
 }
 /****************************
 *  formatage du texte 
@@ -76,6 +92,7 @@ body#in p {
 .small {
     font-size: 0.8em;
     line-height: 1;
+    padding-bottom: 15px;
 }
 .blue {
     color: #B3D5C6;
@@ -101,6 +118,7 @@ blockquote {
 #meteo {
     max-width: 100%;
     border:2px solid #ccc;
+    margin-top: 15px;
 }
 td {
     padding: 0 10px;
@@ -108,6 +126,14 @@ td {
 .entete{
     background:rgba(164, 164, 164, 0.5);
     padding: 5px;
+    text-align: center;
+}
+.in_caption {
+    position: absolute;
+    top: 50%;
+    font-size: 0.8em;
+    text-align: center;
+    color: #fff;
 }
 /****************************
 *          hero 
@@ -143,14 +169,20 @@ h1.in {
 ****************************/
 .in_table {
     width: 100%;
-    margin-top: 20px;
-    padding: 0;
+    padding-top: 20px;
     color: #818181;
     font-family: "Roboto", sans-serif;
     font-size: 12px;
+}
+.in_table td {
     text-align: center;
 }
-.in_table td {width: 200px;}
+.in_table td, .in_table th {
+    width: 200px;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 5px;
+}
 .in_icons {
     display: flex;
     color: #31525B;
@@ -160,22 +192,10 @@ h1.in {
     font-weight: 900;
     color: #31525B;
     border: 2px solid #31525B;
-    border-radius: 50%;
-    margin: 10px;
+    border-radius: 20%;
+    padding: 10px;
 }
-/*****************************************
-*              images
-******************************************/
-.img_wrap {
-    display: inline-block;
-    width: 100%;
-}
-.in_center_items {
-    align-items: center;
-}
-.in_icon {
-    width: 70%;
-}
+
 /*****************************************
 *     images chevauchant le header
 ******************************************/
@@ -183,23 +203,23 @@ h1.in {
     width: 350px;
     height: auto;
     float: left;
-    margin-top: -30px;
+    margin-top: 5%;
     padding-left: 40px;
 }
 .in_img_2 {
     max-width: 15%;
     height: auto;
     float: left;
-    margin-top: 0;
-    margin-left: -37px;
+    margin-top: 7%;
+    margin-left: -100px;
     padding-right: 20px;
 }
 .in_img_3 {
     width: 200px;
     height: auto;
     float: right;
-    margin-top: 0;
-    padding-right: 50px;
+    margin-top: 5%;
+    padding-right: 40px;
 }
 .in_gastronomie {
     width: 300px;
