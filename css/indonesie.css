@@ -56,7 +56,17 @@
     height: 100px;
     display: inline-block;
 }
-
+.bestcity {
+    width: 60%;
+    display: inline-block;
+    padding: 0 50px;   
+    clear: both;
+}
+.goodfly {
+    text-align: center;
+    color: #31525B;
+    margin: auto;
+}
 /****************************
 *  formatage du texte 
 *****************************/
