@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+header#in_header {box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;}
 /****************************
 *   background color vert
 ****************************/
@@ -22,50 +23,15 @@
     margin: 100px auto;
     padding: 0;
 }
-/*****************************************************
-*  taille et positionnement des images d'illustration 
-******************************************************/
-
-.right {
-    float: right;
-    max-width: 300px;
-    height: auto;
-    display: block;
-}
-.left {
-    float: left;
-    max-width: 350px;
-    height: auto;
-    display: block;
-
-    padding: 0 10px 10px;
-}
-.img_wrap {
+.inline {
     display: inline-block;
     width: 100%;
-    padding: 20px 0 0;
 }
-.in_center_items {
-    align-items: center;
+.flex2 {
+    flex-basis: 50%!important;
 }
-.in_icon {
-    width: 70%;
-}
-.mini_map {
-    width: 150px;
-    height: 100px;
-    display: inline-block;
-}
-.bestcity {
-    width: 60%;
-    display: inline-block;
-    padding: 0 50px;   
-    clear: both;
-}
-.goodfly {
-    text-align: center;
-    color: #31525B;
-    margin: auto;
+.flex3 {
+    flex-basis: 33.33%!important;
 }
 /****************************
 *  formatage du texte 
@@ -86,8 +52,15 @@ body#in p {
 .tcenter {
     text-align: center;
 }
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
 .marge {
-    padding: 0 20px 
+    padding: 0 10% 
 }
 .small {
     font-size: 0.8em;
@@ -112,7 +85,7 @@ blockquote {
 .in_txt {
     text-align: justify; 
     width: 100%;  
-    margin: 2% auto;
+    margin: 20px auto;
 }
 /*** meteo ***/
 #meteo {
@@ -164,6 +137,130 @@ h1.in {
     text-align: justify;
     line-height: 1.5;
 }
+/*****************************************************
+*  taille et positionnement des images d'illustration 
+******************************************************/
+.right {
+    float: right;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+.left {
+    float: left;
+    max-width: 350px;
+    height: auto;
+    display: block;
+
+    padding: 0 10px 10px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+.in_center_items {
+    align-items: center;
+}
+.in_icon {
+    width: 70%;
+}
+.mini_map {
+    max-width: 150px;
+    height: 69px;
+    display: inline-block;
+}
+.bestcity {
+    width: 100%;
+    padding:  50px 0;   
+    clear: both;
+}
+.goodfly {
+    text-align: center;
+    color: #31525B;
+    margin: auto;
+}
+
+.in_content {
+    width: 80%;
+    margin: 100px auto;
+    padding: 0;
+}
+
+/**********************************
+*         effets texte 
+***********************************/
+.widetext {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-top: 5px solid  #31525B;
+    padding-top: 15px;
+    transition: width 2s;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 48px;
+    color: #31525B;
+    text-align: center;
+    margin: auto;
+
+  }
+  
+  .widetext:hover {
+    width:60%;
+  }
+/****************************
+*      effets images 
+*****************************/
+/***zoom***/
+.zoom img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom :hover img {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+/***zoom-out***/
+.zoom-out img {
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom-out :hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+/***overlay_img***/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .overlaybox:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 /****************************
 *          ICONES
 ****************************/
