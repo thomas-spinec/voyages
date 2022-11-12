@@ -1,6 +1,14 @@
 /****************************
 *       CSS INDONESIE
 ****************************/
+@font-face {
+    font-family: 'rained_personal_useregular';
+    src: url('../fonts/rained-personal-use-webfont.woff2') format('woff2'),
+         url('../fonts/rained-personal-use-webfont.woff') format('woff'),
+         url('../fonts/rained-personal-use-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     padding: 0;
     margin: 0;
@@ -34,11 +42,26 @@ header#in_header {box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.0
     flex-basis: 33.33%!important;
 }
 /****************************
+*         couleurs 
+*****************************/
+.blue {color: #B3D5C6;}
+.gold {color: #DEBD5B;}
+.green {color: #31525B}
+/****************************
 *  formatage du texte 
 *****************************/
 body#in p {
     font-family: "Lato", sans-serif;
     line-height: 1.5;
+}
+body#in h1 {
+    font-family: 'rained_personal_useregular', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+
+}
+body#in h2, body#in h4, body#in h5, body#in h6 {
+    font-family: "Playfair Display ", sans-serif;
 }
 .justify {
     text-align: justify;
@@ -67,11 +90,6 @@ body#in p {
     line-height: 1;
     padding-bottom: 15px;
 }
-.blue {
-    color: #B3D5C6;
-}
-.green {color: #31525B}
-
 .roboto {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
@@ -107,7 +125,25 @@ td {
     font-size: 0.8em;
     text-align: center;
     color: #fff;
-}
+}/**********************************
+*         effets texte 
+***********************************/
+.widetext {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-top: 5px solid  #31525B;
+    padding-top: 15px;
+    transition: width 2s;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 48px;
+    color: #31525B;
+    text-align: center;
+    margin: auto;
+ }
+    .widetext:hover {
+    width:60%;
+  }
 /****************************
 *          hero 
 *****************************/
@@ -124,7 +160,7 @@ td {
     text-align: center;
 }
 h1.in {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
     font-family: 'Playfair Display', serif;
     font-size: 7em;
     padding-top: 5%;
@@ -151,7 +187,6 @@ h1.in {
     max-width: 350px;
     height: auto;
     display: block;
-
     padding: 0 10px 10px;
 }
 img {
@@ -167,8 +202,8 @@ img {
     width: 70%;
 }
 .mini_map {
-    max-width: 150px;
-    height: 69px;
+    width: 150px;
+    min-height: 69px!important;
     display: inline-block;
 }
 .bestcity {
@@ -181,34 +216,57 @@ img {
     color: #31525B;
     margin: auto;
 }
-
 .in_content {
     width: 80%;
     margin: 100px auto;
     padding: 0;
 }
-
-/**********************************
-*         effets texte 
-***********************************/
-.widetext {
+/*** images glissantes ***/
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 80px;
-    background: #fff;
-    border-top: 5px solid  #31525B;
-    padding-top: 15px;
-    transition: width 2s;
-    font-family: "Century Gothic", sans-serif;
-    font-size: 48px;
-    color: #31525B;
-    text-align: center;
-    margin: auto;
-
-  }
-  
-  .widetext:hover {
-    width:60%;
-  }
+    margin-bottom: 1%;
+}
+#cardbox {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-top: 3%;
+}
+#cardbox:hover > .cardimg {
+    margin-right: 0;
+    margin-left: 40vw;
+    padding-left: 15px;
+    float: right;
+}
+.cardtext {
+    float: left;
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    opacity: 0;
+    transition: 2s;
+    margin-bottom: 5%;
+}
+#cardbox:hover > .cardtext {opacity: 1;}
+.cardimg {
+    width: 50%;
+    position: absolute;
+    display: block;
+    margin-left: 20vw;
+    margin-right: 25vw;
+    z-index: 0;
+    transition: 2s;
+}
 /****************************
 *      effets images 
 *****************************/
@@ -220,8 +278,12 @@ img {
 	transition: .3s ease-in-out;
 }
 .zoom :hover img {
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
+	-webkit-transform: scale(2);
+	transform: scale(2);
+    background: #fff;
+        main {
+            background: rgba(0,0,0,0.5);
+        }
 }
 /***zoom-out***/
 .zoom-out img {
@@ -247,12 +309,10 @@ img {
     transition: .5s ease;
     background-color: #008CBA;
   }
-  
-  .overlaybox:hover .overlay {
+    .overlaybox:hover .overlay {
     opacity: 1;
   }
-  
-  .text {
+    .text {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -260,6 +320,31 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+  }
+  /***avion***/
+  .avion {
+    width:100%;
+    margin:auto;
+    overflow: hidden;
+    position:relative;
+    height:400px;
+    background: url(../img/indonesie/sky.png) no-repeat bottom left;
+    overflow: hidden;
+  }
+  .avion img {
+    -webkit-animation: anim 5s linear infinite;
+    animation: anim 5s linear infinite;
+    width:100px;
+    position: absolute;
+    left:-110px;
+  }
+  @-webkit-keyframes anim {
+     from  {left:-110px;}
+     to {left:2100px}
+  }
+  @keyframes anim {
+     from  {left:-110px;}
+     to {left:2100px}
   }
 /****************************
 *          ICONES
@@ -292,7 +377,10 @@ img {
     border-radius: 20%;
     padding: 10px;
 }
-
+.fa-gold {
+    color: #FFD700;
+    border: 2px solid #FFD700;
+}
 /*****************************************
 *     images chevauchant le header
 ******************************************/
@@ -368,4 +456,24 @@ img {
     }
 }
 
-
+/*****************************************
+*            mooving sky
+******************************************/
+figure {
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    padding: 350px 0 0 0;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    overflow: hidden;
+    background: url(../img/indonesie/sky.png) no-repeat bottom left;
+    animation: clouds_animation 75s linear infinite;
+  }
+  
+  @keyframes clouds_animation {
+    
+    0%  {background-position: 0 0;}
+    100%  {background-position: -2122px 0;}
+  }
