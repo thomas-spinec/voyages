@@ -71,7 +71,6 @@ body#in h1 {
     font-family: 'rained_personal_useregular', sans-serif;
     font-weight: normal;
     font-style: normal;
-
 }
 body#in h2, body#in h4, body#in h5, body#in h6 {
     font-family: "Playfair Display ", sans-serif;
@@ -94,7 +93,7 @@ body#in h2, body#in h4, body#in h5, body#in h6 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
-  }
+}
 .marge {
     padding: 0 10% 
 }
@@ -251,7 +250,7 @@ img {
     margin: 20px;
     overflow: hidden;
     position: relative;
-    width: 500px;
+    width: 45%;
 }
 #slides div h2 {
     font-size: 25px;
@@ -533,19 +532,5 @@ footer#in h2, h3, h4, h5, h6 {
     }
     
 }
-
-
-/* figure {
-    width: 100%;
-    margin: 0;
-    padding: 350px 0 0 0;
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    overflow: hidden;
-    background: url(../img/indonesie);
-    animation: clouds_animation 75s linear infinite;
-  }
-   */
 
   
