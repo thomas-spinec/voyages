@@ -1,19 +1,45 @@
 /****************************
 *       CSS INDONESIE
 ****************************/
+@font-face {
+    font-family: 'rained_personal_useregular';
+    src: url('../fonts/rained-personal-use-webfont.woff2') format('woff2'),
+         url('../fonts/rained-personal-use-webfont.woff') format('woff'),
+         url('../fonts/rained-personal-use-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+<<<<<<< HEAD
+a:link {color: #b3dee5}
+a:link:hover {color:#DEBD5B;}
+header#in_header {box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;}
+
+main#in {margin: 0; padding: 0; }
+=======
+header#in_header {box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;}
+>>>>>>> 101a5cebdda254ee33630bd6ed0c4d1575f43647
 /****************************
-*   background color vert
+*          colors
+#fae6b1 --> beige/jaune
+#ffa101 --> orange
+#b3dee5 --> bleu clair
+#31525b --> bleu/vert 
 ****************************/
+
 .fd {
     background-color: #31525B;
     color: #fff;
     padding: 3%;
 }
+.clear {
+    clear: both;
+}
+
 /*********************************************
 *      div 80% de la largeur de la page 
 ***********************************************/
@@ -22,57 +48,36 @@
     margin: 100px auto;
     padding: 0;
 }
-/*****************************************************
-*  taille et positionnement des images d'illustration 
-******************************************************/
-
-.right {
-    float: right;
-    max-width: 300px;
-    height: auto;
-    display: block;
-}
-.left {
-    float: left;
-    max-width: 350px;
-    height: auto;
-    display: block;
-
-    padding: 0 10px 10px;
-}
-.img_wrap {
+.inline {
     display: inline-block;
     width: 100%;
-    padding: 20px 0 0;
 }
-.in_center_items {
-    align-items: center;
+.flex2 {
+    flex-basis: 50%!important;
 }
-.in_icon {
-    width: 70%;
+.flex3 {
+    flex-basis: 33.33%!important;
 }
-.mini_map {
-    width: 150px;
-    height: 100px;
-    display: inline-block;
-}
-.bestcity {
-    width: 60%;
-    display: inline-block;
-    padding: 0 50px;   
-    clear: both;
-}
-.goodfly {
-    text-align: center;
-    color: #31525B;
-    margin: auto;
-}
+/****************************
+*         couleurs 
+*****************************/
+.blue {color: #B3D5C6;}
+.gold {color: #DEBD5B;}
+.green {color: #31525B}
 /****************************
 *  formatage du texte 
 *****************************/
 body#in p {
     font-family: "Lato", sans-serif;
     line-height: 1.5;
+}
+body#in h1 {
+    font-family: 'rained_personal_useregular', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+body#in h2, body#in h4, body#in h5, body#in h6 {
+    font-family: "Playfair Display ", sans-serif;
 }
 .justify {
     text-align: justify;
@@ -86,19 +91,25 @@ body#in p {
 .tcenter {
     text-align: center;
 }
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+<<<<<<< HEAD
+}
+=======
+  }
+>>>>>>> 101a5cebdda254ee33630bd6ed0c4d1575f43647
 .marge {
-    padding: 0 20px 
+    padding: 0 10% 
 }
 .small {
     font-size: 0.8em;
     line-height: 1;
     padding-bottom: 15px;
 }
-.blue {
-    color: #B3D5C6;
-}
-.green {color: #31525B}
-
 .roboto {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
@@ -111,8 +122,11 @@ blockquote {
 }
 .in_txt {
     text-align: justify; 
+<<<<<<< HEAD
+=======
     width: 100%;  
-    margin: 2% auto;
+>>>>>>> 101a5cebdda254ee33630bd6ed0c4d1575f43647
+    margin: 20px auto;
 }
 /*** meteo ***/
 #meteo {
@@ -151,8 +165,7 @@ td {
     text-align: center;
 }
 h1.in {
-    color: rgba(255, 255, 255, 0.5);
-    font-family: 'Playfair Display', serif;
+    color: rgba(255, 255, 255, 0.8);
     font-size: 7em;
     padding-top: 5%;
     text-align: center;
@@ -164,12 +177,136 @@ h1.in {
     text-align: justify;
     line-height: 1.5;
 }
+/*****************************************************
+*  taille et positionnement des images d'illustration 
+******************************************************/
+.right {
+    float: right;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+.left {
+    float: left;
+    max-width: 350px;
+    height: auto;
+    display: block;
+
+    padding: 0 10px 10px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+.in_center_items {
+    align-items: center;
+}
+.in_icon {
+    width: 70%;
+}
+.mini_map {
+    max-width: 150px;
+    height: 69px;
+    display: inline-block;
+}
+.bestcity {
+    width: 100%;
+    padding:  50px 0;   
+    clear: both;
+}
+.goodfly {
+    text-align: center;
+    color: #31525B;
+    margin: auto;
+}
+
+.in_content {
+    width: 80%;
+    margin: 100px auto;
+    padding: 0;
+}
+
+/**********************************
+*         effets texte 
+***********************************/
+.widetext {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-top: 5px solid  #31525B;
+    padding-top: 15px;
+    transition: width 2s;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 48px;
+    color: #31525B;
+    text-align: center;
+    margin: auto;
+
+  }
+  
+  .widetext:hover {
+    width:60%;
+  }
+/****************************
+*      effets images 
+*****************************/
+/***zoom***/
+.zoom img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom :hover img {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+/***zoom-out***/
+.zoom-out img {
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom-out :hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+/***overlay_img***/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .overlaybox:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
 /****************************
 *          ICONES
 ****************************/
 .in_table {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 2%;
     color: #818181;
     font-family: "Roboto", sans-serif;
     font-size: 12px;
@@ -184,7 +321,6 @@ h1.in {
     padding-top: 5px;
 }
 .in_icons {
-    display: flex;
     color: #31525B;
 }
 
@@ -193,8 +329,166 @@ h1.in {
     color: #31525B;
     border: 2px solid #31525B;
     border-radius: 20%;
-    padding: 10px;
+    padding: 5px;
 }
+.fa-gold {
+    color: #DEBD5B;
+}
+/*****************************************************
+*  taille et positionnement des images d'illustration 
+******************************************************/
+.right {
+    float: right;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+.left {
+    float: left;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    padding: 0 10px 10px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+.in_center_items {
+    align-items: center;
+}
+.in_icon {
+    width: 60%;
+}
+.bestcity {
+    width: 100%;
+    padding:  50px 0;   
+    clear: both;
+}
+.in_content {
+    width: 80%;
+    margin: 100px auto;
+    padding: 0;
+}
+/*****************************************************
+*                images glissantes 
+******************************************************/
+#slides {
+    margin: auto;
+    width: 100%;
+}
+#slides div {
+    background: #fff;
+    float: left;
+    height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 45%;
+}
+#slides div h2 {
+    font-size: 25px;
+    padding: 10px 15px 0 15px;
+}
+#slides div img.mini_map_left {
+    width: 180px;
+    position: absolute;
+    left: 900px!important;
+    top: 248px!important;
+}
+#slides div img.mini_map_right {
+    width: 180px;
+    position: absolute;
+    left: -300px;
+    top: 248px!important;
+}
+#slides div p {
+    text-align: justify;
+    padding: 20px 20px 0;
+}
+#slides div table {
+    padding: 0 40px 0;
+}
+#slides div img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform 0.5s ease-in-out;
+    -moz-transition: -moz-transform 0.5s ease-in-out;
+    -o-transition: -o-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+#slides div.slide-left:hover img {
+    transform: translateX(-600px);
+    -moz-transform: translateX(-600px);
+    -o-transform: translateX(-600px);
+    -webkit-transform: translateX(-600px);
+}
+
+#slides div.slide-right:hover img {
+    transform: translateX(600px);
+    -moz-transform: translateX(600px);
+    -o-transform: translateX(600px);
+    -webkit-transform: translateX(600px);
+}
+
+/****************************
+*      effets images 
+*****************************/
+/***zoom***/
+.zoom img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom :hover img {
+	-webkit-transform: scale(2);
+	transform: scale(2);
+    background: #fff;
+        main {
+            background: rgba(0,0,0,0.5);
+        }
+}
+/***zoom-out***/
+.zoom-out img {
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom-out :hover img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+  /***avion***/
+  .avion {
+    width:100%;
+    margin:auto;
+    overflow: hidden;
+    position:relative;
+ 
+    background: url(../img/indonesie/sky.png) no-repeat bottom left;
+    overflow: hidden;
+  }
+  .avion img {
+    -webkit-animation: anim 10s linear infinite;
+    animation: anim 10s linear infinite;
+    width:100px;
+    position: absolute;
+    left:-110px;
+  }
+  @-webkit-keyframes anim {
+     from  {left:-110px;}
+     to {left:2100px}
+  }
+  @keyframes anim {
+     from  {left:-110px;}
+     to {left:2100px}
+  }
 
 /*****************************************
 *     images chevauchant le header
@@ -270,5 +564,109 @@ h1.in {
         opacity: 0;
     }
 }
+/*****************************************
+*                footer
+******************************************/
+footer#in {
+    width: 100%;
+    margin: 0!important;
+    padding: 0!important;
+    background: url(../img/indonesie/sky.png) no-repeat top center;
+    background-size: cover;
+    color: #1a2a2e;
+    animation: clouds_animation 75s linear infinite;
+}
 
+@keyframes clouds_animation {
+    
+    0%  {background-position: 0 0;}
+    100%  {background-position: -2122px 0;}
+  }
 
+footer#in p, a {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #1a2a2e;
+}
+footer#in h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #1a2a2e;
+}
+/***col_1***/
+.footer_1 {
+    width: 30%;
+    padding: 50px;
+}
+/***col_2***/
+.footer_2 {
+    width: 30%;
+    padding: 20px;
+}
+/***col_3***/
+.footer_3 {
+    width: 30%;
+    padding: 40px;
+}
+/***form***/
+.labels {text-align: right;}
+
+.btn-footer:hover, input#name:hover, input#email:hover {
+    background: #b3dee5;
+}
+
+.btn-footer, input#name, input#email  {
+    color: #31525B;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #31525B;
+    border-radius: 43px;
+    margin: 7px;
+    font-size: 13px;
+    padding: 7px 30px;
+    line-height: 8px;
+}
+/***avion***/
+.goodfly {
+    text-align: center;
+    color: #31525B;
+    margin: auto;
+}
+
+.fa-file {
+    border: none;
+    color: #b3dee5;
+}
+.fa-file:hover {color: #DEBD5B}
+.fa-envelope, .fa-file {
+    vertical-align: middle;
+}
+
+@media (max-width: 1096px) { 
+
+    h1.in {
+        font-size: 5em;
+        padding-top: 10%;
+    }
+    .in_img_1, .in_img_2, .in_img_3 {
+        display: none;
+    }
+    .hist {
+        display: flex;
+        flex-direction: column;
+    }
+    h2.advice {
+        font-size: 2em;
+    }
+    #meteo {
+        display: none;
+    }
+    .foot {
+        flex-direction: column;
+    }
+    .footer_1, .footer_2, .footer_3 {
+        width: 100%;
+    }
+    
+}
+
+  
