@@ -14,10 +14,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+a:link {color: #b3dee5}
+a:link:hover {color:#DEBD5B;}
 header#in_header {box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;}
+
+main#in {margin: 0; padding: 0; }
 /****************************
-*   background color vert
+*          colors
+#fae6b1 --> beige/jaune
+#ffa101 --> orange
+#b3dee5 --> bleu clair
+#31525b --> bleu/vert 
 ****************************/
+
 .fd {
     background-color: #31525B;
     color: #fff;
@@ -26,6 +35,7 @@ header#in_header {box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.0
 .clear {
     clear: both;
 }
+
 /*********************************************
 *      div 80% de la largeur de la page 
 ***********************************************/
@@ -105,7 +115,6 @@ blockquote {
 }
 .in_txt {
     text-align: justify; 
-    width: 100%;  
     margin: 20px auto;
 }
 /*** meteo ***/
@@ -128,26 +137,7 @@ td {
     font-size: 0.8em;
     text-align: center;
     color: #fff;
-}/**********************************
-*         effets texte 
-***********************************/
-.widetext {
-    width: 100%;
-    height: 80px;
-    background: #fff;
-    border-top: 5px solid  #31525B;
-    padding-top: 15px;
-    transition: width 2s;
-    font-family: "Century Gothic", sans-serif;
-    font-size: 48px;
-    color: #31525B;
-    text-align: center;
-    margin: auto;
- }
-    .widetext:hover {
-    width:60%;
-    text-align: center;
-  }
+}
 /****************************
 *          hero 
 *****************************/
@@ -165,7 +155,6 @@ td {
 }
 h1.in {
     color: rgba(255, 255, 255, 0.8);
-    font-family: 'Playfair Display', serif;
     font-size: 7em;
     padding-top: 5%;
     text-align: center;
@@ -176,6 +165,39 @@ h1.in {
     font-family: 'Josefin Sans', sans-serif;
     text-align: justify;
     line-height: 1.5;
+}
+/****************************
+*          ICONES
+****************************/
+.in_table {
+    width: 100%;
+    padding-top: 2%;
+    color: #818181;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+.in_table td {
+    text-align: center;
+}
+.in_table td, .in_table th {
+    width: 200px;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 5px;
+}
+.in_icons {
+    color: #31525B;
+}
+
+.fa-solid, .fas {
+    font-weight: 900;
+    color: #31525B;
+    border: 2px solid #31525B;
+    border-radius: 20%;
+    padding: 5px;
+}
+.fa-gold {
+    color: #DEBD5B;
 }
 /*****************************************************
 *  taille et positionnement des images d'illustration 
@@ -210,22 +232,18 @@ img {
     padding:  50px 0;   
     clear: both;
 }
-.goodfly {
-    text-align: center;
-    color: #31525B;
-    margin: auto;
-}
 .in_content {
     width: 80%;
     margin: 100px auto;
     padding: 0;
 }
-/*** images glissantes ***/
+/*****************************************************
+*                images glissantes 
+******************************************************/
 #slides {
     margin: auto;
     width: 100%;
 }
-
 #slides div {
     background: #fff;
     float: left;
@@ -311,44 +329,19 @@ img {
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-/***overlay_img***/
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-    .overlaybox:hover .overlay {
-    opacity: 1;
-  }
-    .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
   /***avion***/
   .avion {
     width:100%;
     margin:auto;
     overflow: hidden;
     position:relative;
-    height:400px;
+ 
     background: url(../img/indonesie/sky.png) no-repeat bottom left;
     overflow: hidden;
   }
   .avion img {
-    -webkit-animation: anim 5s linear infinite;
-    animation: anim 5s linear infinite;
+    -webkit-animation: anim 10s linear infinite;
+    animation: anim 10s linear infinite;
     width:100px;
     position: absolute;
     left:-110px;
@@ -361,41 +354,7 @@ img {
      from  {left:-110px;}
      to {left:2100px}
   }
-/****************************
-*          ICONES
-****************************/
-.in_table {
-    width: 100%;
-    padding-top: 20px;
-    color: #818181;
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-}
-.in_table td {
-    text-align: center;
-}
-.in_table td, .in_table th {
-    width: 200px;
-    text-align: center;
-    vertical-align: top;
-    padding-top: 5px;
-}
-.in_icons {
-    display: flex;
-    color: #31525B;
-}
 
-.fa-solid, .fas {
-    font-weight: 900;
-    color: #31525B;
-    border: 2px solid #31525B;
-    border-radius: 20%;
-    padding: 10px;
-}
-.fa-gold {
-    color: #FFD700;
-    border: 2px solid #FFD700;
-}
 /*****************************************
 *     images chevauchant le header
 ******************************************/
@@ -470,4 +429,123 @@ img {
         opacity: 0;
     }
 }
+/*****************************************
+*                footer
+******************************************/
+footer#in {
+    width: 100%;
+    margin: 0!important;
+    padding: 0!important;
+    background: url(../img/indonesie/sky.png) no-repeat top center;
+    background-size: cover;
+    color: #1a2a2e;
+    animation: clouds_animation 75s linear infinite;
+}
 
+@keyframes clouds_animation {
+    
+    0%  {background-position: 0 0;}
+    100%  {background-position: -2122px 0;}
+  }
+
+footer#in p, a {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #1a2a2e;
+}
+footer#in h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #1a2a2e;
+}
+/***col_1***/
+.footer_1 {
+    width: 30%;
+    padding: 50px;
+}
+/***col_2***/
+.footer_2 {
+    width: 30%;
+    padding: 20px;
+}
+/***col_3***/
+.footer_3 {
+    width: 30%;
+    padding: 40px;
+}
+/***form***/
+.labels {text-align: right;}
+
+.btn-footer:hover, input#name:hover, input#email:hover {
+    background: #b3dee5;
+}
+
+.btn-footer, input#name, input#email  {
+    color: #31525B;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #31525B;
+    border-radius: 43px;
+    margin: 7px;
+    font-size: 13px;
+    padding: 7px 30px;
+    line-height: 8px;
+}
+/***avion***/
+.goodfly {
+    text-align: center;
+    color: #31525B;
+    margin: auto;
+}
+
+.fa-file {
+    border: none;
+    color: #b3dee5;
+}
+.fa-file:hover {color: #DEBD5B}
+.fa-envelope, .fa-file {
+    vertical-align: middle;
+}
+
+@media (max-width: 1096px) { 
+
+    h1.in {
+        font-size: 5em;
+        padding-top: 10%;
+    }
+    .in_img_1, .in_img_2, .in_img_3 {
+        display: none;
+    }
+    .hist {
+        display: flex;
+        flex-direction: column;
+    }
+    h2.advice {
+        font-size: 2em;
+    }
+    #meteo {
+        display: none;
+    }
+    .foot {
+        flex-direction: column;
+    }
+    .footer_1, .footer_2, .footer_3 {
+        width: 100%;
+    }
+    
+}
+
+
+/* figure {
+    width: 100%;
+    margin: 0;
+    padding: 350px 0 0 0;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    overflow: hidden;
+    background: url(../img/indonesie);
+    animation: clouds_animation 75s linear infinite;
+  }
+   */
+
+  
