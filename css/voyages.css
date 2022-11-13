@@ -114,8 +114,13 @@ header {
 /****************************
 *           TOOLS
 ****************************/
+<<<<<<< HEAD
 .row {display: flex;}
 .col {display:flex; flex-direction: column;}
+=======
+.row {display: flex; padding: 0 15px;}
+.col {display:flex; flex-direction: column; padding: 0 15px;}
+>>>>>>> 101a5cebdda254ee33630bd6ed0c4d1575f43647
 .wrap {flex-wrap: wrap;}
 .flex2 {width: 50%}
 .flex3 {width: 33,33330%}
