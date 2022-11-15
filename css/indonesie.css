@@ -41,18 +41,12 @@ main#in {margin: 0; padding: 0; }
 ***********************************************/
 .in_content {
     width: 80%;
-    margin: 100px auto;
+    margin: 40px auto;
     padding: 0;
 }
 .inline {
     display: inline-block;
     width: 100%;
-}
-.row {
-    display: flex;
-}
-.col {
-    flex: column;
 }
 .flex2 {
     width: 50%!important;
@@ -154,7 +148,7 @@ td {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 400px;
     width: 100%;
 }
 .in_hero-txt {
@@ -174,6 +168,69 @@ h1.in {
     text-align: justify;
     line-height: 1.5;
 }
+
+/*****************************************
+*     images chevauchant le header
+******************************************/
+.in_img_1 {
+        width: 450px;
+        margin-top: -150px;
+        margin-left: 10px;
+    }
+    .in_img_2 {
+        width: 150px;
+        margin-top: -180px;
+        margin-left: 150px;
+    }
+    .in_img_3 {
+        width: 150px;
+        margin-top: -110px;
+        float: right;
+    }
+    .in_gastronomie {
+        width: 300px;
+        height: auto;
+    }
+    /****************************
+    *          ICONES
+    ****************************/
+    .underhero {
+        width: 100%;
+    }
+    .underhero table {
+        width:120px;
+    }
+    .first_col {
+        width: 20%;
+        margin-left: 30px;
+    }
+    .second_col {
+        width: 65%;
+        padding: 0 10px;
+    }
+    .third_col {
+        width: 15%;
+    }
+    .in_fa {
+        text-align: center;
+    }
+    .in_icons {
+        color: #31525B;
+        justify-content: center;
+        margin-left: 50px;
+    }   
+    .fa-solid, .fas {
+        font-weight: 900;
+        color: #31525B;
+        margin: 35px;
+        border: 2px solid #31525B;
+
+        border-radius: 20%;
+        padding: 5px;
+    }
+    .fa-gold {
+        color: #DEBD5B;
+    }
 /*****************************************************
 *  taille et positionnement des images d'illustration 
 ******************************************************/
@@ -217,68 +274,6 @@ img {
     text-align: center;
     color: #31525B;
     margin: auto;
-}
-/****************************
-*          ICONES
-****************************/
-.in_table {
-    padding-top: 2%;
-    color: #818181;
-    font-family: "Roboto", sans-serif;
-    font-size: 12px;
-}
-.in_table td {
-    text-align: center;
-}
-.in_table td, .in_table th {
-    width: 200px;
-    text-align: center;
-    vertical-align: top;
-    padding-top: 5px;
-}
-.in_icons {
-    color: #31525B;
-}
-
-.fa-solid, .fas {
-    font-weight: 900;
-    color: #31525B;
-    border: 2px solid #31525B;
-    border-radius: 20%;
-    padding: 5px;
-}
-.fa-gold {
-    color: #DEBD5B;
-}
-/*****************************************************
-*  taille et positionnement des images d'illustration 
-******************************************************/
-.right {
-    float: right;
-    max-width: 300px;
-    height: auto;
-    display: block;
-}
-.left {
-    float: left;
-    max-width: 350px;
-    height: auto;
-    display: block;
-    padding: 0 10px 10px;
-}
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    padding: 20px 0;
-}
-.in_icon {
-    width: 60%;
-}
-.bestcity {
-    width: 100%;
-    padding:  50px 0;   
-    clear: both;
 }
 
 /*****************************************************
@@ -347,49 +342,6 @@ img {
 /****************************
 *      effets images 
 *****************************/
-/***zoom***/
-.zoom img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.zoom :hover img {
-	-webkit-transform: scale(2);
-	transform: scale(2);
-    background: #fff;
-        main {
-            background: rgba(0,0,0,0.5);
-        }
-}
-/***zoom-out***/
-.zoom-out img {
-	-webkit-transform: scale(1.25);
-	transform: scale(1.25);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.zoom-out :hover img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-}
-  /***avion***/
-  .avion {
-    width:100%;
-    margin:auto;
-    overflow: hidden;
-    position:relative;
- 
-    background: url(../img/indonesie/sky.png) no-repeat bottom left;
-    overflow: hidden;
-  }
-  .avion img {
-    -webkit-animation: anim 10s linear infinite;
-    animation: anim 10s linear infinite;
-    width:100px;
-    position: absolute;
-    left:-110px;
-  }
   @-webkit-keyframes anim {
      from  {left:-110px;}
      to {left:2100px}
@@ -399,35 +351,6 @@ img {
      to {left:2100px}
   }
 
-/*****************************************
-*     images chevauchant le header
-******************************************/
-.in_img_1 {
-    width: 350px;
-    height: auto;
-    float: left;
-    margin-top: 5%;
-    padding-left: 40px;
-}
-.in_img_2 {
-    max-width: 15%;
-    height: auto;
-    float: left;
-    margin-top: 7%;
-    margin-left: -100px;
-    padding-right: 20px;
-}
-.in_img_3 {
-    width: 200px;
-    height: auto;
-    float: right;
-    margin-top: 5%;
-    padding-right: 40px;
-}
-.in_gastronomie {
-    width: 300px;
-    height: auto;
-}
 /*****************************************
 *                slider
 ******************************************/
@@ -541,6 +464,22 @@ footer#in h2, h3, h4, h5, h6 {
 .fa-envelope, .fa-file {
     vertical-align: middle;
 }
+  .avion {
+    width:100%;
+    margin:auto;
+    overflow: hidden;
+    position:relative;
+ 
+    background: url(../img/indonesie/sky.png) no-repeat bottom left;
+    overflow: hidden;
+  }
+  .avion img {
+    -webkit-animation: anim 10s linear infinite;
+    animation: anim 10s linear infinite;
+    width:100px;
+    position: absolute;
+    left:-110px;
+  }
 
 @media (max-width: 1096px) { 
 
@@ -551,12 +490,16 @@ footer#in h2, h3, h4, h5, h6 {
     .in_img_1, .in_img_2, .in_img_3 {
         display: none;
     }
-    .hist {
-        display: flex;
-        flex-direction: column;
+    .in_icons {
+        margin: 0;
     }
+    .flex2 {
+        width: 100%!important;
+    }
+
     h2.advice {
-        font-size: 2em;
+        font-size: 1.5em;
+        text-align: left;
     }
     #meteo {
         display: none;
@@ -567,7 +510,15 @@ footer#in h2, h3, h4, h5, h6 {
     .footer_1, .footer_2, .footer_3 {
         width: 100%;
     }
-    
+    .slides {
+        width: 100%;
+    }
+    .slides div {
+        width: 100%!important;
+    }
+    .slides div p {
+        font-size: 13px;
+    }
 }
 
   
